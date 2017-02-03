@@ -1,0 +1,14 @@
+# 2017.02.03 21:48:39 Støední Evropa (bìžný èas)
+# Embedded file name: scripts/client/gui/prb_control/entities/company/legacy/limits.py
+from gui.prb_control.entities.base.limits import LimitsCollection, VehicleIsValid, VehiclesLevelLimit, TeamIsValid
+
+class CompanyLimits(LimitsCollection):
+    """
+    Company limits class
+    """
+
+    def __init__(self, entity):
+        super(CompanyLimits, self).__init__(entity, (VehicleIsValid(),), (VehiclesLevelLimit(), TeamIsValid()))
+# okay decompyling c:\Users\PC\wotsources\files\originals\res\packages\scripts\scripts\client\gui\prb_control\entities\company\legacy\limits.pyc 
+# decompiled 1 files: 1 okay, 0 failed, 0 verify failed
+# 2017.02.03 21:48:39 Støední Evropa (bìžný èas)
